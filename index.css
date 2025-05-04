@@ -234,39 +234,39 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Light gradient background */
+    height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
     text-align: center;
     padding: 0;
     margin: 0;
-    overflow: hidden; /* Prevent scrollbars */
-    box-sizing: border-box; /* Ensure padding and borders are included in height */
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .techstack-heading {
     font-size: 36px;
     font-weight: bold;
     color: #333;
-    margin-bottom: 20px; /* Reduce margin to save space */
+    margin-bottom: 20px;
 }
 
 .techstack-icons {
     display: flex;
     justify-content: center;
-    gap: 30px; /* Adjust spacing between icons */
+    gap: 30px;
     flex-wrap: wrap;
 }
 
 .tech-icon {
-    width: 120px; /* Set a consistent width for all icons */
-    height: auto; /* Maintain aspect ratio */
+    width: 120px;
+    height: auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
-    filter: grayscale(100%); /* Start with grayscale effect */
-    object-fit: contain; /* Ensure the image fits within the set width */
+    filter: grayscale(100%);
+    object-fit: contain;
 }
 
 .tech-icon:hover {
-    transform: scale(1.2); /* Enlarge icon on hover */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
-    filter: grayscale(0); /* Remove grayscale on hover */
+    transform: scale(1.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    filter: grayscale(0);
 }
