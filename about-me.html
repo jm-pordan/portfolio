@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Johnelli Mickel Pordan</title>
+    <title>About - Johnelli Mickel Pordan</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -11,45 +11,40 @@
         <div class="logo">Portfolio.</div>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about-me.html">About</a></li>
+            <li><a href="about-me.html" class="active">About</a></li>
             <li><a href="tech-stack.html">TechStack</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
     
-    <section>
+    <section class="about-section">
         <div class="content-box">
-            <div class="about" id="about">
-                <div>
-                    <h1 class="heading">About</h1>
+            <h1 class="heading">About Me</h1>
+            <div class="about-myself">
+                <p>
+                    Hello! My name is Johnelli Mickel Pordan, a second-year college student pursuing a Bachelor of Science in Information Technology at St. Dominic College of Asia. My passion lies in understanding how networks operate and how information is transmitted and processed through technology. I find the inner workings of communication systems and data flow incredibly fascinating, and I’m always eager to explore new concepts in IT that push the boundaries of what technology can achieve. This interest drives me to continuously seek opportunities to learn and grow in the field, both in and out of the classroom.
+                </p>
+                <p>
+                    Beyond academics, I actively participate in student life as a proud member of Domini Xode, the official student organization under the IT department. I currently serve my second term as the Outreach Program Director, where I lead initiatives that connect our department with the wider community through various service-oriented activities. Being part of this organization has not only helped me develop leadership and organizational skills but also allowed me to create meaningful impact alongside my peers. Balancing both technical learning and community involvement has shaped my college journey into a well-rounded and fulfilling experience.
+                </p>
+            </div>
+            <div class="photos">
+                <h2 class="photos-heading">Certifications</h2>
+                <div class="lightbox">
+                    <img src="images/cert1.png" alt="Certification 1" class="about-photo" onclick="openModal(this)">
                 </div>
-                <div class="about-myself">
-                    <p>
-                        Hello! My name is Johnelli Mickel Pordan, a second-year college student pursuing a Bachelor of Science in Information Technology at St. Dominic College of Asia. My passion lies in understanding how networks operate and how information is transmitted and processed through technology. I find the inner workings of communication systems and data flow incredibly fascinating, and I’m always eager to explore new concepts in IT that push the boundaries of what technology can achieve. This interest drives me to continuously seek opportunities to learn and grow in the field, both in and out of the classroom.
-                    </p>
-                    <p>
-                        Beyond academics, I actively participate in student life as a proud member of Domini Xode, the official student organization under the IT department. I currently serve my second term as the Outreach Program Director, where I lead initiatives that connect our department with the wider community through various service-oriented activities. Being part of this organization has not only helped me develop leadership and organizational skills but also allowed me to create meaningful impact alongside my peers. Balancing both technical learning and community involvement has shaped my college journey into a well-rounded and fulfilling experience.
-                    </p>
+                <div class="lightbox">
+                    <img src="images/cert2.png" alt="Certification 2" class="about-photo" onclick="openModal(this)">
                 </div>
-                <div class="photos">
-                    <h2 class="photos-heading">Certifications</h2>
-                    <div class="lightbox">
-                        <img src="images/cert1.png" alt="Photo 1" class="about-photo" onclick="openModal(this)">
-                    </div>
-                    <div class="lightbox">
-                        <img src="images/cert2.png" alt="Photo 2" class="about-photo" onclick="openModal(this)">
-                    </div>
-                    <div class="lightbox">
-                        <img src="images/picture1.jpg" alt="Photo 3" class="about-photo" onclick="openModal(this)">
-                    </div>
-                    <div class="lightbox">
-                        <img src="images/picture2.jpg" alt="Photo 4" class="about-photo" onclick="openModal(this)">
-                    </div>
+                <div class="lightbox">
+                    <img src="images/picture1.jpg" alt="Certification 3" class="about-photo" onclick="openModal(this)">
+                </div>
+                <div class="lightbox">
+                    <img src="images/picture2.jpg" alt="Certification 4" class="about-photo" onclick="openModal(this)">
                 </div>
             </div>
         </div>
     </section>
-
 
     <div id="imageModal" class="modal">
         <span class="close" onclick="closeModal()">&times;</span>
