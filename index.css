@@ -234,44 +234,93 @@ h1 {
 
 .techstack-section {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    padding: 40px 20px;
+    min-height: 100vh;
     background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-    text-align: center;
-    padding: 0;
-    margin: 0;
+}
+
+.techstack-content-box {
+    max-width: 800px;
+    width: 100%;
+    padding: 30px;
+    position: relative;
+    border-radius: 25px;
+    background: none;
+    color: #333;
+    z-index: 1;
     overflow: hidden;
-    box-sizing: border-box;
+}
+
+.techstack-content-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #16222a, #3a6073);
+    padding: 8px;
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0) border-box;
+    mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0) border-box;
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    z-index: -1;
 }
 
 .techstack-heading {
-    font-size: 36px;
+    font-size: 2rem;
     font-weight: bold;
-    color: #333;
     margin-bottom: 20px;
+    color: #333;
+    text-align: center;
 }
 
 .techstack-icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.tech-item {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 }
 
 .tech-icon {
-    width: 120px;
+    width: 100px;
     height: auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
-    filter: grayscale(100%);
-    object-fit: contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .tech-icon:hover {
-    transform: scale(1.2);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    filter: grayscale(0);
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tech-label {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.tech-item:hover .tech-label {
+    opacity: 1;
+    visibility: visible;
 }
 
 .contact-section {
@@ -279,34 +328,68 @@ h1 {
     justify-content: center;
     align-items: center;
     height: 80vh;
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
     text-align: center;
     padding: 20px;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
 }
 
 .contact-content-box {
-    max-width: 400px;
+    max-width: 600px;
     width: 100%;
     padding: 30px;
+    position: relative;
+    border-radius: 25px;
+    background: none;
+    color: #333;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.contact-content-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 25px;
     background: linear-gradient(135deg, #16222a, #3a6073);
-    border-radius: 20px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
-    color: #d1d1d1;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 8px;
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0) border-box;
+    mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0) border-box;
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    z-index: -1;
 }
 
 .contact-heading {
     font-size: 24px;
     font-weight: bold;
-    color: #ffffff;
     margin-bottom: 20px;
-    text-align: center;
+    color: linear-gradient(135deg, #16222a, #3a6073);
 }
 
-social-link {
-    position: relative;
-    display: inline-block;
-    text-align: center;
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.social-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .tooltip {
@@ -328,16 +411,4 @@ social-link {
 .social-link:hover .tooltip {
     opacity: 1;
     visibility: visible;
-}
-
-.social-icon {
-    width: 80px;
-    height: auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-}
-
-.social-icon:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
