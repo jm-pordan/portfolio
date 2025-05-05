@@ -3,33 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Johnelli Mickel Pordan</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Contact - Johnelli Mickel Pordan</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="minimal-nav">
-        <div class="logo">JM Pordan.</div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about-me.html">About</a></li>
-            <li><a href="tech-stack.html">Tech Stack</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <section class="contact-section">
-        <div class="contact-content-box">
-            <h1 class="contact-heading">Get in touch via:</h1>
-            <div class="socials">
-                <a href="https://github.com/jm-pordan" target="_blank" class="social-link">
-                    <img src="images/github.png" alt="GitHub" class="social-icon">
-                    <span class="tooltip">GitHub</span>
-                </a>
-                <a href="https://www.linkedin.com/in/jm-pordan-a11241356/?trk=public-profile-join-page" target="_blank" class="social-link">
-                    <img src="images/linkedin.png" alt="LinkedIn" class="social-icon">
-                    <span class="tooltip">LinkedIn</span>
-                </a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">JM Pordan.</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-me.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="certifications.html">Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tech-stack.html">Tech Stack</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="contact py-5" id="contact" style="margin-top: 80px;">
+        
     </section>
+    <section class="contact-section" id="contact">
+        <h1>Get in touch via:</h1>
+        <div class="contact-icons">
+            <a href="http://github.com/jm-pordan" target="_blank">
+                <img src="images/github.png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/jm-pordan-a11241356/?trk=public-profile-join-page" target="_blank">
+                <img src="images/linkedin.png" alt="LinkedIn">
+            </a>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

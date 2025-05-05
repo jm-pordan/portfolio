@@ -3,66 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Johnelli Mickel Pordan</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Tech Stack - Johnelli Mickel Pordan</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="minimal-nav">
-        <div class="logo">JM Pordan.</div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about-me.html">About</a></li>
-            <li><a href="tech-stack.html">Tech Stack</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">JM Pordan.</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-me.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="certifications.html">Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="tech-stack.html">Tech Stack</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <section class="techstack-section">
-        <div class="techstack-content-box">
-            <h1 class="techstack-heading">Tech Stack</h1>
-            <div class="techstack-icons">
-                <div class="tech-item">
-                    <img src="techstack/C_Logo.png" alt="C Language" class="tech-icon">
-                    <p class="tech-label">C Language</p>
+    <!-- Main Content -->
+    <section class="tech-stack-section" id="tech-stack" style="margin-top: 80px;">
+        <div class="container">
+            <h1>Tech Stack</h1>
+            <div class="tech-stack-icons">
+                <div class="tech-stack-item">
+                    <img src="techstack/C_Logo.png" alt="C Language">
+                    <span>C Language</span>
                 </div>
-                <div class="tech-item">
-                    <img src="techstack/java.png" alt="Java" class="tech-icon">
-                    <p class="tech-label">Java</p>
+                <div class="tech-stack-item">
+                    <img src="techstack/java.png" alt="Java">
+                    <span>Java</span>
                 </div>
-                <div class="tech-item">
-                    <img src="techstack/android studio.png" alt="Android Studio" class="tech-icon">
-                    <p class="tech-label">Android Studio</p>
+                <div class="tech-stack-item">
+                    <img src="techstack/android studio.png" alt="Android Studio">
+                    <span>Android Studio</span>
                 </div>
-                <div class="tech-item">
-                    <img src="techstack/vscode.png" alt="VSCode" class="tech-icon">
-                    <p class="tech-label">VSCode</p>
+                <div class="tech-stack-item">
+                    <img src="techstack/vscode.png" alt="VS Code">
+                    <span>VS Code</span>
                 </div>
-                <div class="tech-item">
-                    <img src="techstack/mysql.png" alt="MySql" class="tech-icon">
-                    <p class="tech-label">MySql</p>
+                <div class="tech-stack-item">
+                    <img src="techstack/mysql.png" alt="MySQL">
+                    <span>MySQL</span>
                 </div>
-                <div class="tech-item">
-                    <img src="techstack/git.png" alt="Git" class="tech-icon">
-                    <p class="tech-label">Git</p>
+                <div class="tech-stack-item">
+                    <img src="techstack/git.png" alt="Git">
+                    <span>Git</span>
                 </div>
-                <div class="tech-item">
-                    <img src="techstack/github.png" alt="Github" class="tech-icon">
-                    <p class="tech-label">Github</p>
+                <div class="tech-stack-item">
+                    <img src="techstack/github.png" alt="GitHub">
+                    <span>GitHub</span>
                 </div>
-                <div class="tech-item">
-                    <img src="techstack/html.png" alt="HTML" class="tech-icon">
-                    <p class="tech-label">HTML</p>
+                <div class="tech-stack-item">
+                    <img src="techstack/html.png" alt="HTML">
+                    <span>HTML5</span>
                 </div>
-                <div class="tech-item">
-                    <img src="techstack/css.png" alt="CSS" class="tech-icon">
-                    <p class="tech-label">CSS</p>
+                <div class="tech-stack-item">
+                    <img src="techstack/css.png" alt="CSS">
+                    <span>CSS3</span>
                 </div>
-                <div class="tech-item">
-                    <img src="techstack/javascript.png" alt="JavaScript" class="tech-icon">
-                    <p class="tech-label">JavaScript</p>
+                <div class="tech-stack-item">
+                    <img src="techstack/javascript.png" alt="JavaScript">
+                    <span>JavaScript</span>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
