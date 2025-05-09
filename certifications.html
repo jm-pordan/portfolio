@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certifications - Johnelli Mickel Pordan</title>
+    <title>Johnelli Mickel Pordan</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">JM Pordan.</a>
@@ -37,19 +36,19 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
+    
     <section class="certifications-section" id="certifications">
         <div class="certifications-container">
-            <div class="certification-item" onclick="openCertificationModal('cert1.png', 'Microsoft Office Specialist: PowerPoint Associate (Office 2019)', 'Microsoft PowerPoint certification earners have a fundamental understanding of the PowerPoint environment and demonstrate the correct application of PowerPoint. They are able to create, edit, and enhance PowerPoint presentations, including those for professional grade.')">
-                <img src="images/cert1.png" alt="Certification 1">
+            <div class="certification-item" onclick="openCertificationModal('Word Cert.png')">
+                <img src="images/Word Cert.png" alt="Certification 1">
             </div>
-            <div class="certification-item" onclick="openCertificationModal('cert2.png', 'Certification 2 Title', 'Description for Certification 2.')">
-                <img src="images/cert2.png" alt="Certification 2">
+            <div class="certification-item" onclick="openCertificationModal('PPT Cert.png')">
+                <img src="images/PPT Cert.png" alt="Certification 2">
             </div>
-            <div class="certification-item" onclick="openCertificationModal('picture1.jpg', 'Certification 3 Title', 'Description for Certification 3.')">
+            <div class="certification-item" onclick="openCertificationModal('picture1.jpg')">
                 <img src="images/picture1.jpg" alt="Certification 3">
             </div>
-            <div class="certification-item" onclick="openCertificationModal('picture2.jpg', 'Certification 4 Title', 'Description for Certification 4.')">
+            <div class="certification-item" onclick="openCertificationModal('picture2.jpg')">
                 <img src="images/picture2.jpg" alt="Certification 4">
             </div>
         </div>
@@ -59,26 +58,18 @@
         <div class="certification-modal-content">
             <button class="close-btn" onclick="closeCertificationModal()">&times;</button>
             <img id="modalImage" src="" alt="Certification Image">
-            <h2 id="modalTitle">Certification Title</h2>
-            <p id="modalDescription">Certification Description</p>
-            <button class="btn btn-danger" id="exitButton" onclick="closeCertificationModal()" style="position:absolute; top:10px; right:10px;">X</button>
         </div>
     </div>
 
-    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        function openCertificationModal(image, title, description) {
+        function openCertificationModal(image) {
             var modal = document.getElementById("certificationModal");
             var modalImage = document.getElementById("modalImage");
-            var modalTitle = document.getElementById("modalTitle");
-            var modalDescription = document.getElementById("modalDescription");
             modal.style.display = "block";
             modalImage.src = "images/" + image;
-            modalTitle.innerHTML = title;
-            modalDescription.innerHTML = description;
         }
 
         function closeCertificationModal() {

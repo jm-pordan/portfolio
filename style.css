@@ -1,3 +1,6 @@
+/* Import the masculine fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto+Slab:wght@400;500;700&display=swap');
+
 /* General Reset */
 body, html {
     margin: 0;
@@ -8,12 +11,12 @@ body, html {
 
 /* General body styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    color: #222;
     line-height: 1.6;
     background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
     margin: 0;
     padding: 0;
-    color: #222;
     text-align: center;
     min-height: 100vh;
     display: flex;
@@ -25,9 +28,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.5rem; /* Using Bootstrap spacing units */
+    padding: 1rem 1.5rem;
     background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3); /* Bootstrap shadow */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
 .minimal-nav .logo {
@@ -39,7 +42,7 @@ body {
 .minimal-nav ul {
     list-style: none;
     display: flex;
-    gap: 1rem; /* Using Bootstrap spacing units */
+    gap: 1rem;
     padding: 0;
     margin: 0;
 }
@@ -49,8 +52,8 @@ body {
     color: #e0e0e0;
     font-weight: 500;
     font-size: 1rem;
-    padding: 0.5rem 1rem; /* Using Bootstrap spacing units */
-    border-radius: 0.25rem; /* Bootstrap border-radius */
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
     transition: background 0.3s ease, color 0.3s ease;
 }
 
@@ -66,7 +69,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 80vh;
-    padding: 1.5rem; /* Using Bootstrap spacing units */
+    padding: 1.5rem;
 }
 
 .text-container {
@@ -74,28 +77,40 @@ body {
 }
 
 h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #333;
     font-size: 2.5rem;
-    color: #222;
-    margin-bottom: 1rem; /* Using Bootstrap spacing units */
+    margin-bottom: 1rem;
+}
+
+h1:hover {
+    color: #555;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
 }
 
 .homep {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
     font-size: 1rem;
     color: #555;
-    margin-bottom: 1.5rem; /* Using Bootstrap spacing units */
+    margin-bottom: 1.5rem;
 }
 
 .resume-btn {
     background-color: #444;
     color: white;
     border: none;
-    padding: 0.75rem 1.5rem; /* Using Bootstrap spacing units */
+    padding: 0.75rem 1.5rem;
     font-size: 1rem;
     cursor: pointer;
-    border-radius: 0.25rem; /* Bootstrap border-radius */
+    border-radius: 0.25rem;
     transition: background 0.3s ease-in-out;
-    margin-top: 1.5rem; /* Using Bootstrap spacing units */
-    margin-bottom: 1.5rem; /* Using Bootstrap spacing units */
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .resume-btn:hover {
@@ -105,7 +120,7 @@ h1 {
 .socials {
     display: flex;
     justify-content: center;
-    gap: 2.5rem; /* Using Bootstrap spacing units */
+    gap: 2.5rem;
 }
 
 .contact-btn {
@@ -115,7 +130,7 @@ h1 {
     font-size: 1rem;
     border-bottom: 1px solid #444;
     transition: color 0.3s ease-in-out;
-    padding: 0.6rem 1.125rem; /* Roughly equivalent to your values */
+    padding: 0.6rem 1.125rem;
 }
 
 .contact-btn:hover {
@@ -124,23 +139,24 @@ h1 {
 }
 
 .profile-image {
-    width: 12.5rem; /* Roughly 200px */
-    height: 12.5rem; /* Roughly 200px */
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    margin-bottom: 1.25rem; /* Using Bootstrap spacing units */
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     overflow: hidden;
-    border: 0.25rem solid #ccc; /* Roughly 4px */
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Bootstrap shadow */
+    border: 4px solid #ccc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
 }
 
 .profile-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the container without distortion */
-    border-radius: 50%; /* Keeps the image circular */
-    display: block; /* Removes any inline spacing issues */
+    object-fit: cover;
+    object-position: center;
 }
 
 /* About section */
@@ -148,7 +164,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2.5rem 1rem; /* Using Bootstrap spacing units */
+    padding: 2.5rem 1rem;
     background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
     min-height: 100vh;
 }
@@ -156,98 +172,134 @@ h1 {
 .content-box {
     max-width: 900px;
     width: 100%;
-    padding: 1.875rem; /* Roughly 30px */
-    background: linear-gradient(135deg, #16222a, #3a6073);
-    border-radius: 1.25rem; /* Roughly 20px */
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4); /* Bootstrap shadow */
-    color: #d1d1d1;
+    padding: 1.875rem;
+    background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+    border-radius: 1.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+    color: #fff;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .heading {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #333;
     text-align: center;
-    font-size: 2.25rem; /* Roughly 36px */
-    font-weight: bold;
-    color: #ffffff;
-    margin-bottom: 1.5rem; /* Using Bootstrap spacing units */
-    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.6); /* Bootstrap text-shadow */
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.6);
+}
+
+.heading:hover {
+    color: #555;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
 }
 
 .about-myself {
-    font-size: 1.125rem; /* Roughly 18px */
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 1.125rem;
     line-height: 1.8;
-    color: #d1d1d1;
+    color: #fff;
     text-align: justify;
-    margin-bottom: 1.875rem; /* Roughly 30px */
+    margin-bottom: 1.875rem;
 }
 
 .photos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
-    gap: 1.25rem; /* Using Bootstrap spacing units */
-    margin-top: 1.25rem; /* Using Bootstrap spacing units */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.25rem;
     text-align: center;
 }
 
 .photos-heading {
     grid-column: 1 / -1;
-    font-size: 1.5rem; /* Roughly 24px */
-    font-weight: bold;
-    color: #ffffff;
-    margin-bottom: 1.25rem; /* Using Bootstrap spacing units */
-    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.6); /* Bootstrap text-shadow */
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.6);
+}
+
+.photos-heading:hover {
+    color: #555;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
 }
 
 .about-photo {
     width: 100%;
     height: auto;
-    border-radius: 0.625rem; /* Roughly 10px */
-    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1); /* Slightly adjusted shadow */
+    border-radius: 0.625rem;
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 
 /* Navbar */
 .navbar {
-    background: linear-gradient(90deg, #0f2027, #203a43, #2c5364); /* Gradient background */
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3); /* Subtle shadow */
-    padding: 0.75rem 1.5rem; /* Adjusted padding for better spacing */
+    background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+    padding: 0.75rem 1.5rem;
 }
 
 .navbar-brand {
-    font-size: 1.8rem; /* Slightly larger font size */
-    font-weight: bold;
-    color: #e0e0e0; /* Light text color */
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #333;
+    font-size: 1.8rem;
 }
 
 .navbar-nav .nav-item {
-    margin-right: 1.5rem; /* Increased spacing between items */
+    margin-right: 1.5rem;
 }
 
 .navbar-nav .nav-item:last-child {
-    margin-right: 0; /* No margin for the last item */
+    margin-right: 0;
 }
 
 .navbar-nav .nav-link {
-    color: #e0e0e0; /* Light text color */
+    color: #e0e0e0;
     font-weight: 500;
     font-size: 1rem;
-    padding: 0.5rem 1rem; /* Padding for clickable area */
-    border-radius: 0.25rem; /* Rounded corners */
-    transition: background 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Subtle hover background */
-    color: #ffffff; /* Brighter text on hover */
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
 }
 
 /* Main Content */
 h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #333;
     font-size: 2rem;
     margin-top: 20px;
 }
 
+h1:hover {
+    color: #555;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
 p.lead {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
     font-size: 1.2rem;
     color: gray;
 }
@@ -265,14 +317,14 @@ a img:hover {
 .tech-stack-icons img {
     width: 80px;
     height: 80px;
-    object-fit: contain; /* Ensure icons fit within the container */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    object-fit: contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
 .tech-stack-icons img:hover {
-    transform: scale(1.1); /* Slightly enlarge the icon */
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+    transform: scale(1.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
 
 .tech-stack-section {
@@ -280,7 +332,7 @@ a img:hover {
     justify-content: center;
     align-items: center;
     padding: 2.5rem 1rem;
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Light gradient background */
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
     min-height: 100vh;
 }
 
@@ -288,26 +340,35 @@ a img:hover {
     max-width: 800px;
     width: 100%;
     padding: 2rem;
-    background: #ffffff; /* White background */
-    border-radius: 1rem; /* Rounded corners */
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    border: 3px solid #2c5364; /* Border color */
+    background: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    border: 3px solid #2c5364;
     text-align: center;
     margin-bottom: 15px;
 }
 
 .tech-stack-container h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #333;
     font-size: 2rem;
-    font-weight: bold;
-    color: #333333; /* Dark text color */
-    margin-bottom: 2rem; /* Added margin-bottom for spacing */
+    margin-bottom: 2rem;
+}
+
+.tech-stack-container h1:hover {
+    color: #555;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
 }
 
 .tech-stack-icons {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
-    gap: 2rem; /* Space between icons */
-    justify-items: center; /* Center icons horizontally */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-items: center;
 }
 
 .tech-stack-item {
@@ -333,61 +394,72 @@ a img:hover {
 
 .tech-stack-item span {
     margin-top: 0.5rem;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
     font-size: 0.9rem;
-    color: #333333; /* Dark text color */
+    color: #333333;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
 .tech-stack-item:hover span {
-    opacity: 1; /* Show the name on hover */
+    opacity: 1;
 }
 
 /* Contact Section */
 .contact-section {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
-    height: 100vh; /* Full height of the viewport */
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Light gradient background */
-    transform: translateY(-10%); /* Move the section upward */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    transform: translateY(-10%);
 }
 
 .contact-container {
     max-width: 600px;
     width: 100%;
     padding: 2rem;
-    background: #ffffff; /* White background */
-    border-radius: 1rem; /* Rounded corners */
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    border: 3px solid #2c5364; /* Border color */
+    background: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    border: 3px solid #2c5364;
     text-align: center;
 }
 
 .contact-container h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #333;
     font-size: 1.5rem;
-    font-weight: bold;
-    color: #333333; /* Dark text color */
     margin-bottom: 1rem;
+}
+
+.contact-container h1:hover {
+    color: #555;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
 }
 
 .contact-icons {
     display: flex;
-    gap: 2rem; /* Space between icons */
-    margin-top: 1rem; /* Space between heading and icons */
+    gap: 2rem;
+    margin-top: 1rem;
 }
 
 .contact-icons img {
-    width: 70px; /* Increased size */
-    height: 70px; /* Increased size */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    width: 70px;
+    height: 70px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
 .contact-icons img:hover {
-    transform: scale(1.1); /* Slightly enlarge the icon */
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+    transform: scale(1.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
 
 /* Certifications Section */
@@ -396,68 +468,68 @@ a img:hover {
     justify-content: center;
     align-items: center;
     padding: 2.5rem 1rem;
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Light gradient background */
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
     min-height: 100vh;
 }
 
 .certifications-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2x2 grid format */
-    gap: 2rem; /* Space between items */
-    justify-items: center; /* Center items horizontally */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-items: center;
     width: 100%;
     max-width: 1000px;
-    margin: 0 auto; /* Center the grid on the page */
+    margin: 0 auto;
 }
 
 .certification-item {
     position: relative;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .certification-item img {
     width: 100%;
     height: auto;
-    border-radius: 0.5rem; /* Rounded corners */
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .certification-item:hover img {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    transform: scale(1.05);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.3);
 }
 
 .certification-modal {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Dark overlay */
+    background: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
     z-index: 1000;
     padding: 2rem;
-    overflow-y: auto; /* Allow scrolling if content overflows */
+    overflow-y: auto;
 }
 
 .certification-modal.active {
-    display: flex; /* Show modal when active */
+    display: flex;
 }
 
 .certification-modal-content {
-    background: #ffffff; /* White background */
+    background: #ffffff;
     border-radius: 0.5rem;
     padding: 2rem;
     max-width: 800px;
     width: 100%;
     box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.5);
     position: relative;
-    text-align: center; /* Center text inside the modal */
-    margin: auto; /* Center horizontally */
+    text-align: center;
+    margin: auto;
 }
 
 .certification-modal-content img {
@@ -465,16 +537,28 @@ a img:hover {
     height: auto;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
-    margin-top: 1rem; /* Added margin-top to move the image downward */
+    margin-top: 1rem;
 }
 
 .certification-modal-content h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #333;
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #333333;
+}
+
+.certification-modal-content h2:hover {
+    color: #555;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
 }
 
 .certification-modal-content p {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
     font-size: 1rem;
     color: #555555;
     margin-bottom: 1rem;
@@ -494,7 +578,7 @@ a img:hover {
 }
 
 .certification-modal-content .close-btn:hover {
-    transform: scale(1.2); /* Slightly enlarge on hover */
+    transform: scale(1.2);
 }
 
 /* Responsive Design */
@@ -550,12 +634,12 @@ a img:hover {
     }
 
     .profile-image {
-        width: 10rem;
-        height: 10rem;
+        width: 150px;
+        height: 150px;
     }
 
     .profile-image img {
-        max-width: 100px;
+        max-width: 200px;
     }
 
     .navbar-brand {
@@ -587,8 +671,8 @@ a img:hover {
     }
 
     .profile-image {
-        width: 8rem;
-        height: 8rem;
+        width: 120px;
+        height: 120px;
     }
 
     .profile-image img {
@@ -597,5 +681,19 @@ a img:hover {
 
     .photos {
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .certifications-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 100px;
+    }
+
+    .certifications-container {
+        margin-top: 50px;
     }
 }
