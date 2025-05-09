@@ -10,7 +10,7 @@ function closeModal() {
     modal.style.display = "none";
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
     $('#imageModal').on('show.bs.modal', function (event) {
         const image = $(event.relatedTarget);
         const src = image.data('src');
