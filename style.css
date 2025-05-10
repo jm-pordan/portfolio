@@ -1,7 +1,5 @@
-/* Import the masculine fonts */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto+Slab:wght@400;500;700&display=swap');
 
-/* General Reset */
 body, html {
     margin: 0;
     padding: 0;
@@ -9,7 +7,6 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
-/* General body styles */
 body {
     font-family: 'Roboto Slab', serif;
     color: #222;
@@ -23,7 +20,6 @@ body {
     flex-direction: column;
 }
 
-/* Minimal navigation bar */
 .minimal-nav {
     display: flex;
     justify-content: space-between;
@@ -62,7 +58,6 @@ body {
     color: #ffffff;
 }
 
-/* Home section */
 .home {
     display: flex;
     flex-direction: column;
@@ -142,7 +137,6 @@ h1:hover {
     object-position: center;
 }
 
-/* About section */
 .about-section {
     display: flex;
     justify-content: center;
@@ -225,7 +219,6 @@ h1:hover {
     cursor: pointer;
 }
 
-/* Navbar */
 .navbar {
     background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
@@ -263,7 +256,6 @@ h1:hover {
     color: #ffffff;
 }
 
-/* Main Content */
 h1 {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
@@ -287,7 +279,6 @@ p.lead {
     color: gray;
 }
 
-/* Social Icons */
 a img {
     transition: transform 0.2s ease-in-out;
 }
@@ -296,7 +287,6 @@ a img:hover {
     transform: scale(1.1);
 }
 
-/* Tech Stack Icons */
 .tech-stack-icons img {
     width: 80px;
     height: 80px;
@@ -389,7 +379,6 @@ a img:hover {
     opacity: 1;
 }
 
-/* Contact Section */
 .contact-section {
     display: flex;
     flex-direction: column;
@@ -445,7 +434,6 @@ a img:hover {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
 
-/* Certifications Section */
 .certifications-section {
     display: flex;
     justify-content: center;
