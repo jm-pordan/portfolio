@@ -80,8 +80,8 @@ h1 {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    color: #333;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+    color: #ffffff;
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
@@ -516,9 +516,9 @@ a img:hover {
 }
 
 .certification-modal-content img {
-    width: 100%;
+    width: 80%;
     height: auto;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
 }
@@ -564,7 +564,6 @@ a img:hover {
     transform: scale(1.2);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .minimal-nav {
         flex-direction: column;
